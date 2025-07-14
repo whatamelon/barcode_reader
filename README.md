@@ -1,46 +1,96 @@
-# Getting Started with Create React App
+# 📱 바코드 스캐너
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React 19와 Tailwind CSS 4를 사용하여 구축된 모바일 바코드 스캐너 애플리케이션입니다. QuaggaJS 라이브러리를 사용하여 핸드폰 카메라로 바코드를 실시간으로 인식합니다.
 
-## Available Scripts
+## 🚀 주요 기능
 
-In the project directory, you can run:
+- 📷 **실시간 바코드 스캔**: 모바일 카메라를 사용한 실시간 바코드 인식
+- 📱 **모바일 최적화**: 핸드폰 웹브라우저에 최적화된 UI/UX
+- 🔄 **다양한 바코드 형식 지원**: Code 128, EAN, UPC, Code 39, Codabar 등
+- 📋 **스캔 기록**: 최근 스캔한 바코드들의 기록 저장
+- 🎯 **시각적 가이드**: 스캔 영역을 표시하는 시각적 가이드 제공
 
-### `npm start`
+## 🛠️ 기술 스택
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React 19** - 최신 React 버전
+- **TypeScript** - 타입 안전성
+- **Tailwind CSS 4** - 최신 CSS 프레임워크
+- **QuaggaJS** - 바코드 스캔 라이브러리
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📦 설치 및 실행
 
-### `npm test`
+### 1. 의존성 설치
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+### 2. 개발 서버 실행
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. 프로덕션 빌드
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run build
+```
 
-### `npm run eject`
+## 📱 사용법
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. **모바일 브라우저에서 접속**: 데스크톱보다 모바일에서 더 나은 성능을 제공합니다
+2. **카메라 권한 허용**: 브라우저에서 카메라 접근 권한을 허용해주세요
+3. **스캔 시작**: "바코드 스캔 시작" 버튼을 클릭합니다
+4. **바코드 스캔**: 바코드를 스캔 영역 안에 위치시킵니다
+5. **결과 확인**: 스캔된 바코드 정보가 화면에 표시됩니다
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔧 지원하는 바코드 형식
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Code 128
+- EAN-13
+- EAN-8
+- Code 39
+- Code 39 VIN
+- Codabar
+- UPC-A
+- UPC-E
+- Interleaved 2 of 5
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🌐 브라우저 지원
 
-## Learn More
+- Chrome (모바일/데스크톱)
+- Safari (iOS/데스크톱)
+- Firefox (모바일/데스크톱)
+- Edge (데스크톱)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📝 주의사항
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **HTTPS 필수**: 카메라 접근을 위해 HTTPS 환경에서 실행해야 합니다
+- **모바일 권장**: 데스크톱보다 모바일에서 더 나은 성능을 제공합니다
+- **카메라 권한**: 브라우저에서 카메라 접근 권한을 허용해야 합니다
+
+## 🚀 배포
+
+### Netlify 배포
+
+```bash
+npm run build
+# build 폴더를 Netlify에 업로드
+```
+
+### Vercel 배포
+
+```bash
+npm run build
+# Vercel CLI를 사용하여 배포
+```
+
+## 📄 라이선스
+
+MIT License
+
+## 🤝 기여
+
+이슈나 풀 리퀘스트를 통해 기여해주세요!
+# barcode_reader
